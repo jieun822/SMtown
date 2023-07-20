@@ -200,6 +200,7 @@ header {
   width: 3%;
 }
 
+/*  흐르는 텍스트 섹션  */
 .flow-section {
   width: 100%;
   position: relative;
@@ -301,4 +302,62 @@ header {
 
 .portList li {
   padding-left: 5vw;
+  height: 100vh;
+  transform: translateX(18vw);
+  transform: translateY(13vw);
+}
+
+/****we are****/
+
+.weare {
+  padding: 10vw 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: var(--en-font1);
+  font-size: 5vw;
+  font-weight: 800;
+  position: relative;
+}
+
+.weare h1 {
+  font-weight: 800;
+  transform: translateX(-20vw);
+}
+
+.weare p span {
+  font-family: var(--en-font2);
+}
+.weare p {
+  margin-top: 2vw;
+  transform: translateX(-10vw);
+}
+.weare img {
+  width: 40%;
+  position: absolute;
+  top: 4vw;
+  left: 40vw;
+}
+
+.weare img:last-child {
+  width: 15%;
+  top: 20vw;
+  left: 67vw;
+  position: absolute;
+}
+
+/***** info ******/
+.info {
+  background-color: #000;
+  color: #fff;
+}
+
+.info-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info-top,
+.info-bottom {
+  display: flex;
 }
