@@ -583,4 +583,88 @@ footer {
   height: 100vh;
   background-color: #000;
   color: #fff;
+  position: relative;
 }
+
+footer svg {
+  display: block;
+  width: 100%;
+  height: 12vw;
+  letter-spacing: 0.52em;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+footer svg:hover {
+  fill: red;
+}
+footer svg text {
+  transform-origin: 50% 50%;
+  animation: rotate-txt 10s linear infinite;
+  font-family: var(--en-font2);
+}
+
+footer .footer-rotate {
+  position: absolute;
+  top: 8vw;
+  right: 15vw;
+}
+
+@keyframes rotate-txt {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+footer .footer-txt {
+  padding: 10vw 0 0 13vw;
+}
+footer .footer-txt h1 {
+  font-size: 4vw;
+}
+
+footer .footer-txt p {
+  font-size: 1.1vw;
+  font-family: var(--ko-font);
+  line-height: 1.3;
+}
+
+footer .footer-txt span {
+  font-family: var(--en-font2);
+}
+
+.footer-bottom img {
+  width: 50%;
+  position: relative;
+  bottom: -10vw;
+  left: 0;
+  display: block;
+}
+
+footer img {
+  width: 30%;
+  position: absolute;
+  top: 10vw;
+  left: 28vw;
+}
+
+/* .footer-bottom {
+  position: absolute;
+  left: 0;
+  font-family: var(--en-font1);
+  font-size: 20vw;
+}
+
+.footer-bottom h1 {
+  font-weight: 900;
+  transform: translateY(25vh);
+}
+
+.footer-bottom span {
+  font-size: 10vw;
+  transform: translateX(-5vw);
+  display: inline-block;
+}
+ */
