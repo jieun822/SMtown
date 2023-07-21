@@ -1,35 +1,15 @@
-window.onscroll = function () {
-  scrollRotate();
-};
-
-function scrollRotate() {
-  let rolling = document.getElementById("top");
-  rolling.style.transform = "translateX(" + window.pageYOffset / -2 + "px)";
-}
-
-//스크롤시 이미지 크게 보이기
-gsap.set(".scaleDown", { xPercent: -50, yPercent: -50 });
-gsap.to(".scaleDown", {
-  scale: 2.5,
-  scrollTrigger: {
-    trigger: ".main_animation",
-    pin: ".main_animation",
-    scrub: 1,
-  },
-});
-
 ScrollTrigger.matchMedia({
   all: function () {
     let iframe1 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(1) .flex_ .thumb_p ._tp iframe";
+      ".se03._0313 .scrolls .portList li:nth-of-type(1) a .flex_ .thumb_p ._tp iframe";
     let iframe2 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(2) .flex_ .thumb_p ._tp iframe";
+      ".se03._0313 .scrolls .portList li:nth-of-type(2) a .flex_ .thumb_p ._tp iframe";
     let iframe3 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(3) .flex_ .thumb_p ._tp iframe";
+      ".se03._0313 .scrolls .portList li:nth-of-type(3) a .flex_ .thumb_p ._tp iframe";
     let iframe4 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(4) .flex_ .thumb_p ._tp iframe";
+      ".se03._0313 .scrolls .portList li:nth-of-type(4) a .flex_ .thumb_p ._tp iframe";
     let iframe5 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(5) .flex_ .thumb_p ._tp iframe";
+      ".se03._0313 .scrolls .portList li:nth-of-type(5) a .flex_ .thumb_p ._tp iframe";
 
     let vid1 = $(iframe1).attr("src");
     let vid2 = $(iframe2).attr("src");
@@ -91,5 +71,9 @@ ScrollTrigger.matchMedia({
       scrub: 1,
       invalidateOnRefresh: true,
     });
+  },
+  "(max-width: 1180px)": function () {
+    $(".se03._0313 .pin").removeAttr("style");
+    $(".se03._0313").removeAttr("style");
   },
 });

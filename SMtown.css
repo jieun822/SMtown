@@ -200,7 +200,7 @@ header {
   width: 3%;
 }
 
-/*  흐르는 텍스트 섹션  */
+/*  흐르는 텍스트 섹션
 .flow-section {
   width: 100%;
   position: relative;
@@ -305,6 +305,154 @@ header {
   height: 100vh;
   transform: translateX(18vw);
   transform: translateY(13vw);
+}
+  */
+
+/* 20230313 메인 포트폴리오 섹션 리뉴얼 */
+.se03._0313 {
+  width: 100%;
+  position: relative;
+  font-family: "Pretendard";
+  overflow: hidden;
+}
+.se03._0313 .pin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.se03._0313 .pin .textplay {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+.se03._0313 .pin .textplay:first-of-type {
+  margin-bottom: 50px;
+}
+.se03._0313 .pin .textplay .play {
+  display: flex;
+  justify-content: space-around;
+  animation: textLoop 30s linear infinite;
+  min-width: 200%;
+  flex-shrink: 0;
+}
+.se03._0313 .pin .textplay:nth-of-type(2) .play {
+  animation-direction: reverse;
+}
+.se03._0313 .pin .textplay .play li {
+  box-sizing: border-box;
+  font-size: 10.42vw;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.se03._0313 .pin .textplay .play li span {
+  -webkit-text-stroke: 1px #000;
+  color: rgba(0, 0, 0, 0);
+}
+
+@keyframes textLoop {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.se03._0313 .scrolls {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 50vh;
+}
+
+.se03._0313 .scrolls .portList {
+  width: 100%;
+}
+
+.se03._0313 .scrolls .portList li {
+  width: 85%;
+  max-width: 1480px;
+  margin-bottom: 31.25vw;
+}
+
+.se03._0313 .scrolls .portList li {
+  display: block;
+  width: 100%;
+  color: #000;
+}
+
+.se03._0313 .scrolls .portList li .flex_ {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.se03._0313 .scrolls .portList li .flex_ .numbering {
+  display: flex;
+  align-items: flex-end;
+  font-family: var(--en-font1);
+  font-weight: 900;
+  flex-shrink: 0;
+  transform: translateX(150%);
+}
+
+.se03._0313 .scrolls .portList li .flex_ .numbering span {
+  font-size: 3vw;
+  margin-bottom: -7px;
+  padding-right: 5px;
+}
+
+.se03._0313 .scrolls .portList li .flex_ .numbering p {
+  color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.se03._0313 .scrolls .portList li .flex_ .thumb_p {
+  display: flex;
+  position: relative;
+  width: 80%;
+}
+
+.se03._0313 .scrolls .portList li .flex_ .thumb_p ._tp {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.se03._0313 .scrolls .portList li .flex_ .thumb_p ._tp iframe {
+  width: 100%;
+  min-width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  pointer-events: none;
+}
+
+.se03._0313 .scrolls .portList li > h1 {
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: right;
+  transform: translateX(-4.5%);
+  font-family: var(--en-font1);
+}
+
+.se03._0313 .scrolls .portList li:nth-of-type(2n-1) {
+  margin-left: 5vw;
+}
+
+.se03._0313 .scrolls .portList li:nth-of-type(2n) {
+  transform: translateX(-5vw);
 }
 
 /****we are****/
