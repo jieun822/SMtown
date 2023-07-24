@@ -214,7 +214,6 @@ header {
 }
 
 .st0 {
-  stroke-miterlimit: 10;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s linear alternate infinite;
@@ -424,18 +423,17 @@ header {
 }
 
 .st1 {
-  stroke-miterlimit: 10;
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
   animation: dash2 2.5s linear alternate infinite;
 }
 
 @keyframes dash2 {
   from {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 300;
   }
   to {
-    stroke-dashoffset: 500;
+    stroke-dashoffset: 0;
   }
 }
 
