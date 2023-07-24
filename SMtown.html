@@ -5,12 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>SMtown</title>
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
   <!-- 초기화 -->
   <link rel="stylesheet" href="./common/style/reset.css">
   <!-- font -->
   <link rel="stylesheet" href="./common/style/font.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- aos.css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- 내가 작성한 style -->
   <link rel="stylesheet" href="./SMtown.css">
   <!-- 제이쿼리 파일 -->
@@ -42,7 +47,7 @@
     </div>
     <div class="header-txt">
       <div class="ani_top" id="top">
-        <div>SMTOWN</div>
+        <div>SMTOW<span>N</span></div>
       </div>
       <div class="ani_bottom">
         <p>We <span>creative</span></p>
@@ -58,9 +63,14 @@
       <p>from</p>
       <p class="c-box">creativity</p>
       <div class="c-img">
-        <img src="./images/Vector 3.png" alt="">
         <img src="./images/things.png" alt="">
-        <img src="./images/Group 4.png" alt="">
+        <img src="./images/arrow.png" alt="">
+        <svg width="400" height="87" viewBox="0 0 460 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="st0"
+            d="M8 76.5121C153.667 54.0121 446.4 8.81206 452 8.01206C459 7.01206 224 68.5121 220 76.5121C216.8 82.9121 295.667 72.8454 335.5 67.0121"
+            stroke="white" stroke-width="15" stroke-linecap="round" />
+        </svg>
+
       </div>
     </div>
     <div class="main_animation">
@@ -79,8 +89,8 @@
       </div>
   </section>
 
-  <!-- sec03 -->
-  <section class="se03 _0313">
+  <!----- flow section ----->
+  <section class="flow">
     <div class="pin">
       <div class="textplay">
         <ul class="play">
@@ -184,114 +194,19 @@
     </div>
   </section>
 
-  <!-- se03 -->
-  <!-- <div class="flow-section">
-    <div class="flow-wrap">
-      <div class="textplay">
-        <ul class="play">
-          <li><span>WE MAKE</span> THINGS</li>
-          <li><span>WE MAKE</span> THINGS</li>
-        </ul>
-        <ul class="play">
-          <li><span>WE MAKE</span> THINGS</li>
-          <li><span>WE MAKE</span> THINGS</li>
-        </ul>
-      </div>
-      <div class="textplay">
-        <ul class="play">
-          <li><span>FROM</span> CREATIVITY</li>
-          <li><span>FROM</span> CREATIVITY</li>
-        </ul>
-        <ul class="play">
-          <li><span>FROM</span> CREATIVITY</li>
-          <li><span>FROM</span> CREATIVITY</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="scrolls">
-      <ul class="portList">
-        <li>
-          <div class="flex_">
-            <div class="numbering">
-              <span>01</span>
-              <p><span>/</span>05</p>
-            </div>
-            <div class="thumb_p">
-              <div class="_tp">
-                <img src="./images/image 16.png" alt="">
-              </div>
-            </div>
-          </div>
-          <h1>SHINee</h1>
-        </li>
-        <li>
-
-          <div class="flex_">
-            <div class="numbering">
-              <span>02</span>
-              <p><span>/</span>05</p>
-            </div>
-            <div class="thumb_p">
-              <div class="_tp">
-                <img src="./images/image 17.png" alt="">
-              </div>
-            </div>
-          </div>
-          <h1>aespa</h1>
-        </li>
-        <li>
-          <div class="flex_">
-            <div class="numbering">
-              <span>03</span>
-              <p><span>/</span>05</p>
-            </div>
-            <div class="thumb_p">
-              <div class="_tp">
-                <img src="./images/image 18.png" alt="">
-              </div>
-            </div>
-          </div>
-          <h1>EXO</h1>
-        </li>
-        <li>
-          <div class="flex_">
-            <div class="numbering">
-              <span>04</span>
-              <p><span>/</span>05</p>
-            </div>
-            <div class="thumb_p">
-              <div class="_tp">
-                <img src="./images/image 19.png" alt="">
-              </div>
-            </div>
-          </div>
-          <h1>Red Velvet</h1>
-        </li>
-        <li>
-          <div class="flex_">
-            <div class="numbering">
-              <span>05</span>
-              <p><span>/</span>05</p>
-            </div>
-            <div class="thumb_p">
-              <div class="_tp">
-                <img src="./images/image 21.png" alt="">
-              </div>
-            </div>
-          </div>
-          <h1>NCT DREAM</h1>
-        </li>
-      </ul>
-    </div>
-  </div> -->
-
   <!----- we are ----->
   <section class="weare">
     <h1>We are</h1>
     <p><span>Entertainment</span> Group</p>
     <img src="./images/Asia.png" alt="">
-    <img src="./images/line.png" alt="">
+    <!-- <img src="./images/line.png" alt=""> -->
+
+    <svg width="262" height="37" viewBox="0 0 262 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="st1"
+        d="M3 30.1472C8 20.1472 24.2 5.14719 49 25.1472C73.8 45.1472 108.667 26.814 123 15.1473C133.167 5.98067 162.4 -6.85266 198 15.1473C233.6 37.1473 253.5 24.314 259 15.1473"
+        stroke="white" stroke-width="5" stroke-linecap="round" />
+    </svg>
+
   </section>
 
   <!----- info ----->
@@ -348,11 +263,14 @@
   <footer>
     <div class="footer-txt">
       <h1>Let's <span>get</span> in <span>touch</span></h1>
+      <h2 class="contact">contact<br>us</h2>
       <p>SM의 미래 인재를 찾고 있습니다.<br>
         오디션에 지원해보세요!</p>
     </div>
-    <img src="./images/footerimg.png" alt="">
-    <img src="./images/smtown.png" alt="">
+    <div class="footer-img">
+      <img src="./images/footerimg.png" alt="">
+      <img src="./images/smtown.png" alt="">
+    </div>
     <div class="footer-rotate">
       <svg viewBox="0 0 150 150">
         <path id="curve" fill="transparent" d="M 75 75 m -50, 0 a 50, 50 0 1, 1 100, 0 a 50, 50 0 1, 1 -100, 0" />
@@ -363,8 +281,19 @@
         </text>
       </svg>
     </div>
-
+    <ul class="footer-copy">
+      <li>2023 ⓒ LEEJIEUN. ALL Rights Reserved.</li>
+      <li><a href="https://jieun822.github.io/portfolio/">PORTFOLIO</a></li>
+    </ul>
   </footer>
+
+  <div class="arrowbtn">
+    <a href="#" id="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+        <path
+          d="M262-367q-9-9-9.5-21t8.5-21l198-198q5-5 10-7t11-2q6 0 11 2t10 7l198 197q9 8 9 20.5t-9 21.5q-9 9-21.5 9t-21.5-9L480-543 304-366q-8 9-20.5 8.5T262-367Z" />
+      </svg></a>
+  </div>
 </body>
 
 </html>

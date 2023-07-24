@@ -21,15 +21,15 @@ gsap.to(".scaleDown", {
 ScrollTrigger.matchMedia({
   all: function () {
     let iframe1 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(1) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .portList li:nth-of-type(1) .flex_ .thumb_p ._tp iframe";
     let iframe2 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(2) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .portList li:nth-of-type(2) .flex_ .thumb_p ._tp iframe";
     let iframe3 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(3) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .portList li:nth-of-type(3) .flex_ .thumb_p ._tp iframe";
     let iframe4 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(4) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .portList li:nth-of-type(4) .flex_ .thumb_p ._tp iframe";
     let iframe5 =
-      ".se03._0313 .scrolls .portList li:nth-of-type(5) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .portList li:nth-of-type(5) .flex_ .thumb_p ._tp iframe";
 
     let vid1 = $(iframe1).attr("src");
     let vid2 = $(iframe2).attr("src");
@@ -79,12 +79,12 @@ ScrollTrigger.matchMedia({
     });
   },
   "(min-width: 1181px)": function () {
-    $(".se03._0313 .pin").removeAttr("style");
-    $(".se03._0313").removeAttr("style");
+    $(".flow .pin").removeAttr("style");
+    $(".flow").removeAttr("style");
 
     ScrollTrigger.create({
-      trigger: ".se03._0313 .pin",
-      endTrigger: ".se03._0313",
+      trigger: ".flow .pin",
+      endTrigger: ".flow",
       start: "top top",
       end: "bottom bottom",
       pin: true,
@@ -92,4 +92,22 @@ ScrollTrigger.matchMedia({
       invalidateOnRefresh: true,
     });
   },
+});
+
+$("html").on("wheel", function (e) {
+  var _scrollTop = window.scrollY || document.documentElement.scrollTop; // 현재 스크롤 위치
+
+  // 위로 버튼 이벤트
+  if (_scrollTop < 100) {
+    $("#btn").css({ fill: "#fff", "background-color": "#000" });
+  }
+  if (_scrollTop > 101) {
+    $("#btn").css({ fill: "#000", "background-color": "#fff" });
+  }
+  if (_scrollTop > 2630) {
+    $("#btn").css({ fill: "#fff", "background-color": "#000" });
+  }
+  if (_scrollTop > 9300) {
+    $("#btn").css({ fill: "#000", "background-color": "#fff" });
+  }
 });

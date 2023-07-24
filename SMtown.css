@@ -8,12 +8,11 @@
   --point-color: #e8e8e8;
 }
 
-/* 드래그 
+/* 드래그 */
 ::selection {
   background-color: #333333e0;
   color: #fff;
 }
-*/
 
 /* 스크롤바 */
 ::-webkit-scrollbar {
@@ -54,6 +53,14 @@ body {
   gap: 0.1vw;
 }
 
+.global-nav li {
+  transition: 0.3s;
+}
+
+.global-nav li:hover {
+  transform: translateX(0.5vw);
+}
+
 .top-menu .logo img {
   width: 30%;
 }
@@ -72,9 +79,17 @@ header {
   font-size: 25vw;
   font-family: var(--en-font1);
   font-weight: 900;
+  background: url("./images/logobg.jpg") no-repeat 50% / cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.header-txt .ani_top {
+.header-txt #top div span {
+  background: url("./images/logobg.jpg") no-repeat 0 0 / cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .header-txt .ani_bottom {
@@ -91,10 +106,6 @@ header {
 
 .header-txt .ani_bottom span {
   font-family: var(--en-font2);
-}
-
-.test {
-  height: 200vh;
 }
 
 .gradient {
@@ -126,6 +137,7 @@ header {
 .wemake .top-text h1 {
   transform: translateX(-13vw);
 }
+
 .wemake .top-text p:last-child {
   font-family: var(--en-font2);
 }
@@ -186,135 +198,46 @@ header {
 .top-text {
   position: relative;
 }
-.c-img img:nth-child(2) {
+
+.c-img img:nth-child(1) {
   position: absolute;
   top: -4vw;
   left: 48vw;
   width: 25%;
 }
 
-.c-img img:last-child {
+.c-img img:nth-child(2) {
   position: absolute;
   top: 8vw;
   left: 40vw;
   width: 3%;
 }
 
-/*  흐르는 텍스트 섹션
-.flow-section {
-  width: 100%;
-  position: relative;
-  font-family: var(--ko-font);
-  overflow: hidden;
+.st0 {
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear alternate infinite;
 }
 
-.flow-section .flow-wrap {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: #e8e8e8;
-}
-
-.flow-section .flow-wrap .textplay {
-  width: 100%;
-  text-align: center;
-  display: flex;
-}
-
-.flow-section .flow-wrap .textplay:first-of-type {
-  margin-bottom: 50px;
-}
-
-.flow-section .flow-wrap .textplay .play {
-  display: flex;
-  justify-content: space-around;
-  animation: textLoop 30s linear infinite;
-  flex-shrink: 0;
-}
-
-.flow-section .flow-wrap .textplay:nth-of-type(2) .play {
-  animation-direction: reverse;
-}
-
-.flow-section .flow-wrap .textplay .play li {
-  box-sizing: border-box;
-  font-size: 10.42vw;
-  font-weight: 600;
-  flex-shrink: 0;
-}
-
-.flow-section .flow-wrap .textplay .play li span {
-  -webkit-text-stroke: 1px #000;
-  color: rgba(0, 0, 0, 0);
-}
-
-@keyframes textLoop {
-  0% {
-    transform: translate(0, 0);
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
   }
-  100% {
-    transform: translate(-100%, 0);
+  to {
+    stroke-dashoffset: 0;
   }
 }
 
-.scrolls {
-  width: 50%;
-}
-
-.flex_ {
-  display: flex;
-}
-
-.flex_ .numbering {
-  align-items: flex-end;
-  display: flex;
-  font-size: 3vw;
-  margin-right: 1vw;
-  font-family: var(--en-font1);
-  font-weight: 900;
-}
-
-.flex_ .numbering p {
-  font-size: 1.6vw;
-  -webkit-text-stroke: 1px #000;
-  color: rgba(0, 0, 0, 0);
-  transform: translateX(0.7vw);
-  transform: translateY(-0.3vw);
-}
-
-.flex_ .numbering p span {
-  margin-right: 0.1vw;
-}
-
-.portList li h1 {
-  font-family: var(--en-font1);
-  font-size: 1.5vw;
-  font-weight: 900;
-  text-align: right;
-}
-
-.portList li {
-  padding-left: 5vw;
-  height: 100vh;
-  transform: translateX(18vw);
-  transform: translateY(13vw);
-}
-  */
-
-.se03._0313 {
+/***** flow section *****/
+.flow {
   width: 100%;
   position: relative;
   font-family: "Pretendard";
   overflow: hidden;
 }
-.se03._0313 .pin {
+
+.flow .pin {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -326,31 +249,37 @@ header {
   left: 0;
   z-index: -1;
 }
-.se03._0313 .pin .textplay {
+
+.flow .pin .textplay {
   width: 100%;
   text-align: center;
   display: flex;
 }
-.se03._0313 .pin .textplay:first-of-type {
+
+.flow .pin .textplay:first-of-type {
   margin-bottom: 50px;
 }
-.se03._0313 .pin .textplay .play {
+
+.flow .pin .textplay .play {
   display: flex;
   justify-content: space-around;
   animation: textLoop 30s linear infinite;
   min-width: 200%;
   flex-shrink: 0;
 }
-.se03._0313 .pin .textplay:nth-of-type(2) .play {
+
+.flow .pin .textplay:nth-of-type(2) .play {
   animation-direction: reverse;
 }
-.se03._0313 .pin .textplay .play li {
+
+.flow .pin .textplay .play li {
   box-sizing: border-box;
   font-size: 10.42vw;
   font-weight: 600;
   flex-shrink: 0;
 }
-.se03._0313 .pin .textplay .play li span {
+
+.flow .pin .textplay .play li span {
   -webkit-text-stroke: 1px #000;
   color: rgba(0, 0, 0, 0);
 }
@@ -364,36 +293,36 @@ header {
   }
 }
 
-.se03._0313 .scrolls {
+.flow .scrolls {
   width: 95%;
   max-width: 1600px;
   margin: 0 auto;
   padding-top: 50vh;
 }
 
-.se03._0313 .scrolls .portList {
+.flow .scrolls .portList {
   width: 100%;
 }
 
-.se03._0313 .scrolls .portList li {
+.flow .scrolls .portList li {
   width: 85%;
   max-width: 1480px;
   margin-bottom: 31.25vw;
 }
 
-.se03._0313 .scrolls .portList li {
+.flow .scrolls .portList li {
   display: block;
   width: 100%;
   color: #000;
 }
 
-.se03._0313 .scrolls .portList li .flex_ {
+.flow .scrolls .portList li .flex_ {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.se03._0313 .scrolls .portList li .flex_ .numbering {
+.flow .scrolls .portList li .flex_ .numbering {
   display: flex;
   align-items: flex-end;
   font-family: var(--en-font1);
@@ -402,32 +331,32 @@ header {
   transform: translateX(150%);
 }
 
-.se03._0313 .scrolls .portList li .flex_ .numbering span {
+.flow .scrolls .portList li .flex_ .numbering span {
   font-size: 3vw;
   margin-bottom: -7px;
   padding-right: 5px;
 }
 
-.se03._0313 .scrolls .portList li .flex_ .numbering p {
+.flow .scrolls .portList li .flex_ .numbering p {
   color: rgba(0, 0, 0, 0);
   font-size: 30px;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
-.se03._0313 .scrolls .portList li .flex_ .thumb_p {
+.flow .scrolls .portList li .flex_ .thumb_p {
   display: flex;
   position: relative;
   width: 80%;
 }
 
-.se03._0313 .scrolls .portList li .flex_ .thumb_p ._tp {
+.flow .scrolls .portList li .flex_ .thumb_p ._tp {
   width: 100%;
   overflow: hidden;
   padding-bottom: 50%;
   position: relative;
 }
 
-.se03._0313 .scrolls .portList li .flex_ .thumb_p ._tp iframe {
+.flow .scrolls .portList li .flex_ .thumb_p ._tp iframe {
   width: 100%;
   min-width: 100vw;
   position: absolute;
@@ -438,7 +367,7 @@ header {
   pointer-events: none;
 }
 
-.se03._0313 .scrolls .portList li > h1 {
+.flow .scrolls .portList li > h1 {
   font-size: 2vw;
   font-weight: 700;
   text-align: right;
@@ -446,18 +375,18 @@ header {
   font-family: var(--en-font1);
 }
 
-.se03._0313 .scrolls .portList li:nth-of-type(2n-1) {
+.flow .scrolls .portList li:nth-of-type(2n-1) {
   margin-left: 5vw;
 }
 
-.se03._0313 .scrolls .portList li:nth-of-type(2n) {
+.flow .scrolls .portList li:nth-of-type(2n) {
   transform: translateX(-5vw);
 }
 
 /****we are****/
 
 .weare {
-  padding: 10vw 0 5vw;
+  padding: 15vw 0 5vw;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -475,22 +404,39 @@ header {
 .weare p span {
   font-family: var(--en-font2);
 }
+
 .weare p {
   margin-top: 2vw;
   transform: translateX(-10vw);
 }
+
 .weare img {
   width: 40%;
   position: absolute;
-  top: 4vw;
+  top: 9vw;
   left: 40vw;
 }
 
-.weare img:last-child {
-  width: 15%;
-  top: 20vw;
+.weare svg {
+  top: 25vw;
   left: 67vw;
   position: absolute;
+}
+
+.st1 {
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash2 2s linear alternate infinite;
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 /***** info ******/
@@ -584,9 +530,10 @@ footer {
   background-color: #000;
   color: #fff;
   position: relative;
+  overflow-y: hidden;
 }
 
-footer svg {
+footer .footer-rotate svg {
   display: block;
   width: 100%;
   height: 12vw;
@@ -595,10 +542,10 @@ footer svg {
   transition: 0.3s;
 }
 
-footer svg:hover {
+footer .footer-rotate svg:hover {
   fill: red;
 }
-footer svg text {
+footer .footer-rotate svg text {
   transform-origin: 50% 50%;
   animation: rotate-txt 10s linear infinite;
   font-family: var(--en-font2);
@@ -620,6 +567,7 @@ footer .footer-rotate {
 }
 footer .footer-txt {
   padding: 10vw 0 0 13vw;
+  position: relative;
 }
 footer .footer-txt h1 {
   font-size: 4vw;
@@ -635,36 +583,61 @@ footer .footer-txt span {
   font-family: var(--en-font2);
 }
 
-.footer-bottom img {
-  width: 50%;
-  position: relative;
-  bottom: -10vw;
-  left: 0;
-  display: block;
-}
-
-footer img {
+.footer-img img:nth-child(1) {
   width: 30%;
   position: absolute;
   top: 10vw;
   left: 28vw;
 }
 
-/* .footer-bottom {
+.footer-img img:nth-child(2) {
   position: absolute;
-  left: 0;
+  bottom: -0.23vw;
+  width: 72%;
+  vertical-align: bottom;
+}
+
+footer .contact {
   font-family: var(--en-font1);
-  font-size: 20vw;
+  font-size: 1.1vw;
+  position: absolute;
+  right: 19vw;
+  top: 13.2vw;
+  text-align: center;
 }
 
-.footer-bottom h1 {
-  font-weight: 900;
-  transform: translateY(25vh);
+.footer-copy {
+  font-family: var(--en-font1);
+  color: #737373;
+  font-weight: 500;
+  display: flex;
+  gap: 2vw;
+  position: absolute;
+  bottom: 0.7vw;
+  right: 1vw;
+  font-size: 1vw;
+  padding-right: 1vw;
 }
 
-.footer-bottom span {
-  font-size: 10vw;
-  transform: translateX(-5vw);
-  display: inline-block;
+.footer-copy li:last-child {
+  border-bottom: 1px solid #737373;
 }
- */
+
+.arrowbtn a {
+  fill: #fff;
+  position: fixed;
+  bottom: 1.2vw;
+  right: 1vw;
+  background-color: #000;
+  border-radius: 50%;
+  width: 2.2vw;
+  height: 2.2vw;
+  display: gird;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.arrowbtn a:hover {
+  transform: translateY(-7px);
+}
