@@ -581,14 +581,13 @@ footer .footer-txt span {
   font-family: var(--en-font2);
 }
 
-.footer-img img:nth-child(1) {
-  width: 30%;
+.footer-img svg {
   position: absolute;
   top: 10vw;
   left: 28vw;
 }
 
-.footer-img img:nth-child(2) {
+.footer-img img:nth-child(1) {
   position: absolute;
   bottom: -0.23vw;
   width: 72%;
@@ -638,4 +637,19 @@ footer .contact {
 }
 .arrowbtn a:hover {
   transform: translateY(-7px);
+}
+
+#line2 {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: dash3 5s linear alternate infinite;
+}
+
+@keyframes dash3 {
+  from {
+    stroke-dashoffset: 1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
