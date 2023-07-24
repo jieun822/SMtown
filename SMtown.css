@@ -79,7 +79,7 @@ header {
   font-size: 25vw;
   font-family: var(--en-font1);
   font-weight: 900;
-  background: url("./images/logobg1.jpg") no-repeat 50% / cover;
+  background: url("./images/logobg1.jpg") no-repeat 50%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -110,12 +110,12 @@ header {
 
 .gradient {
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(130, 130, 130, 1) 62%,
+    rgba(130, 130, 130, 1) 52%,
     rgba(255, 255, 255, 1) 100%
   );
 }
@@ -422,7 +422,7 @@ header {
   position: absolute;
 }
 
-.st1 {
+/* .st1 {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
   animation: dash2 2.5s linear alternate infinite;
@@ -436,7 +436,7 @@ header {
     stroke-dashoffset: 0;
   }
 }
-
+ */
 /***** info ******/
 .info {
   color: #fff;
