@@ -98,10 +98,10 @@ $("html").on("wheel", function (e) {
   var _scrollTop = window.scrollY || document.documentElement.scrollTop; // 현재 스크롤 위치
 
   // 위로 버튼 이벤트
-  if (_scrollTop < 100) {
+  if (_scrollTop < 10) {
     $("#btn").css({ fill: "#fff", "background-color": "#000" });
   }
-  if (_scrollTop > 101) {
+  if (_scrollTop > 15) {
     $("#btn").css({ fill: "#000", "background-color": "#fff" });
   }
   if (_scrollTop > 2630) {

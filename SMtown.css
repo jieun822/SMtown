@@ -79,14 +79,14 @@ header {
   font-size: 25vw;
   font-family: var(--en-font1);
   font-weight: 900;
-  background: url("./images/logobg.jpg") no-repeat 50% / cover;
+  background: url("./images/logobg1.jpg") no-repeat 50% / cover;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .header-txt #top div span {
-  background: url("./images/logobg.jpg") no-repeat 0 0 / cover;
+  background: url("./images/logobg1.jpg") no-repeat 0 0 / cover;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -602,7 +602,7 @@ footer .contact {
   font-size: 1.1vw;
   position: absolute;
   right: 19vw;
-  top: 13.2vw;
+  top: 13vw;
   text-align: center;
 }
 
