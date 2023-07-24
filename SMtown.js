@@ -21,15 +21,15 @@ gsap.to(".scaleDown", {
 ScrollTrigger.matchMedia({
   all: function () {
     let iframe1 =
-      ".flow .scrolls .portList li:nth-of-type(1) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .iframe-wrap li:nth-of-type(1) .flex_ .iframe-wrap2 .iframe-main iframe";
     let iframe2 =
-      ".flow .scrolls .portList li:nth-of-type(2) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .iframe-wrap li:nth-of-type(2) .flex_ .iframe-wrap2 .iframe-main iframe";
     let iframe3 =
-      ".flow .scrolls .portList li:nth-of-type(3) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .iframe-wrap li:nth-of-type(3) .flex_ .iframe-wrap2 .iframe-main iframe";
     let iframe4 =
-      ".flow .scrolls .portList li:nth-of-type(4) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .iframe-wrap li:nth-of-type(4) .flex_ .iframe-wrap2 .iframe-main iframe";
     let iframe5 =
-      ".flow .scrolls .portList li:nth-of-type(5) .flex_ .thumb_p ._tp iframe";
+      ".flow .scrolls .iframe-wrap li:nth-of-type(5) .flex_ .iframe-wrap2 .iframe-main iframe";
 
     let vid1 = $(iframe1).attr("src");
     let vid2 = $(iframe2).attr("src");
@@ -79,11 +79,11 @@ ScrollTrigger.matchMedia({
     });
   },
   "(min-width: 1181px)": function () {
-    $(".flow .pin").removeAttr("style");
+    $(".flow .text-wrap").removeAttr("style");
     $(".flow").removeAttr("style");
 
     ScrollTrigger.create({
-      trigger: ".flow .pin",
+      trigger: ".flow .text-wrap",
       endTrigger: ".flow",
       start: "top top",
       end: "bottom bottom",

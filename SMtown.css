@@ -237,7 +237,7 @@ header {
   overflow: hidden;
 }
 
-.flow .pin {
+.flow .text-wrap {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -250,17 +250,17 @@ header {
   z-index: -1;
 }
 
-.flow .pin .textplay {
+.flow .text-wrap .textplay {
   width: 100%;
   text-align: center;
   display: flex;
 }
 
-.flow .pin .textplay:first-of-type {
+.flow .text-wrap .textplay:first-of-type {
   margin-bottom: 50px;
 }
 
-.flow .pin .textplay .play {
+.flow .text-wrap .textplay .play {
   display: flex;
   justify-content: space-around;
   animation: textLoop 30s linear infinite;
@@ -268,18 +268,18 @@ header {
   flex-shrink: 0;
 }
 
-.flow .pin .textplay:nth-of-type(2) .play {
+.flow .text-wrap .textplay:nth-of-type(2) .play {
   animation-direction: reverse;
 }
 
-.flow .pin .textplay .play li {
+.flow .text-wrap .textplay .play li {
   box-sizing: border-box;
   font-size: 10.42vw;
   font-weight: 600;
   flex-shrink: 0;
 }
 
-.flow .pin .textplay .play li span {
+.flow .text-wrap .textplay .play li span {
   -webkit-text-stroke: 1px #000;
   color: rgba(0, 0, 0, 0);
 }
@@ -300,29 +300,29 @@ header {
   padding-top: 50vh;
 }
 
-.flow .scrolls .portList {
+.flow .scrolls .iframe-wrap {
   width: 100%;
 }
 
-.flow .scrolls .portList li {
+.flow .scrolls .iframe-wrap li {
   width: 85%;
   max-width: 1480px;
   margin-bottom: 31.25vw;
 }
 
-.flow .scrolls .portList li {
+.flow .scrolls .iframe-wrap li {
   display: block;
   width: 100%;
   color: #000;
 }
 
-.flow .scrolls .portList li .flex_ {
+.flow .scrolls .iframe-wrap li .flex_ {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.flow .scrolls .portList li .flex_ .numbering {
+.flow .scrolls .iframe-wrap li .flex_ .numbering {
   display: flex;
   align-items: flex-end;
   font-family: var(--en-font1);
@@ -331,32 +331,32 @@ header {
   transform: translateX(150%);
 }
 
-.flow .scrolls .portList li .flex_ .numbering span {
+.flow .scrolls .iframe-wrap li .flex_ .numbering span {
   font-size: 3vw;
   margin-bottom: -7px;
   padding-right: 5px;
 }
 
-.flow .scrolls .portList li .flex_ .numbering p {
+.flow .scrolls .iframe-wrap li .flex_ .numbering p {
   color: rgba(0, 0, 0, 0);
   font-size: 30px;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
-.flow .scrolls .portList li .flex_ .thumb_p {
+.flow .scrolls .iframe-wrap li .flex_ .iframe-wrap2 {
   display: flex;
   position: relative;
   width: 80%;
 }
 
-.flow .scrolls .portList li .flex_ .thumb_p ._tp {
+.flow .scrolls .iframe-wrap li .flex_ .iframe-wrap2 .iframe-main {
   width: 100%;
   overflow: hidden;
   padding-bottom: 50%;
   position: relative;
 }
 
-.flow .scrolls .portList li .flex_ .thumb_p ._tp iframe {
+.flow .scrolls .iframe-wrap li .flex_ .iframe-wrap2 .iframe-main iframe {
   width: 100%;
   min-width: 100vw;
   position: absolute;
@@ -367,7 +367,7 @@ header {
   pointer-events: none;
 }
 
-.flow .scrolls .portList li > h1 {
+.flow .scrolls .iframe-wrap li > h1 {
   font-size: 2vw;
   font-weight: 700;
   text-align: right;
@@ -375,11 +375,11 @@ header {
   font-family: var(--en-font1);
 }
 
-.flow .scrolls .portList li:nth-of-type(2n-1) {
+.flow .scrolls .iframe-wrap li:nth-of-type(2n-1) {
   margin-left: 5vw;
 }
 
-.flow .scrolls .portList li:nth-of-type(2n) {
+.flow .scrolls .iframe-wrap li:nth-of-type(2n) {
   transform: translateX(-5vw);
 }
 
