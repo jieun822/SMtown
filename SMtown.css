@@ -213,7 +213,7 @@ header {
   width: 3%;
 }
 
-.st0 {
+/* .st0 {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s linear alternate infinite;
@@ -226,6 +226,10 @@ header {
   to {
     stroke-dashoffset: 0;
   }
+} */
+
+.line path{
+  transition: 1.5s;
 }
 
 /***** flow section *****/
@@ -638,19 +642,3 @@ footer .contact {
 .arrowbtn a:hover {
   transform: translateY(-7px);
 }
-/* 
-#line2 {
-  stroke-dasharray: 1500;
-  stroke-dashoffset: 1500;
-  animation: dash3 5s linear alternate infinite;
-}
-
-@keyframes dash3 {
-  from {
-    stroke-dashoffset: 1500;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
- */

@@ -96,6 +96,7 @@ ScrollTrigger.matchMedia({
 
 $("html").on("wheel", function (e) {
   var _scrollTop = window.scrollY || document.documentElement.scrollTop; // 현재 스크롤 위치
+  console.log(_scrollTop);
 
   // 위로 버튼 이벤트
   if (_scrollTop < 0) {
@@ -112,12 +113,12 @@ $("html").on("wheel", function (e) {
   }
 });
 
-const line = document.querySelectorAll(".st1 path");
-$(window).on("scroll", () => {
+const line = document.querySelectorAll('.line path');
+$(window).on('scroll', () => {
   line.forEach(function (a, idx) {
     let length = a.getTotalLength();
-    // console.log(length);
-    if (scrollY > 9000) {
+    //console.log(length);
+    if (scrollY > 700) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
@@ -125,3 +126,4 @@ $(window).on("scroll", () => {
     }
   });
 });
+
