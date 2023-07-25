@@ -110,13 +110,20 @@ header {
 
 .gradient {
   width: 100%;
-  height: 35vh;
-  background: rgb(0, 0, 0);
+  height: 40vh;
+  background: #fff;
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(130, 130, 130, 1) 52%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(29, 29, 29, 1) 12%,
+    rgba(54, 54, 54, 1) 21%,
+    rgba(78, 78, 78, 1) 29%,
+    rgba(103, 103, 103, 1) 38%,
+    rgba(130, 130, 130, 1) 46%,
+    rgba(191, 191, 191, 1) 68%,
+    rgba(214, 214, 214, 1) 75%,
+    rgba(233, 233, 233, 1) 81%,
+    rgba(255, 255, 255, 1) 91%
   );
 }
 
@@ -126,7 +133,7 @@ header {
 }
 
 .wemake .top-text {
-  padding-top: 4vh;
+  padding-top: 10vh;
   text-align: center;
   font-size: 5vw;
   line-height: 1;
@@ -190,46 +197,34 @@ header {
   z-index: -999;
 }
 
-.c-img img {
-  transform: translateY(-3vw);
-  width: 20%;
-}
-
 .top-text {
   position: relative;
 }
 
-.c-img img:nth-child(1) {
+.c-img img {
   position: absolute;
-  top: -4vw;
+  top: -5vw;
   left: 48vw;
   width: 25%;
 }
 
-.c-img img:nth-child(2) {
+.c-img .line0 {
+  top: 10vw;
   position: absolute;
-  top: 8vw;
-  left: 40vw;
-  width: 3%;
+  width: 5vw;
+  left: 38vw;
 }
 
-/* .st0 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 2s linear alternate infinite;
+.c-img .line {
+  width: 25vw;
 }
 
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-} */
-
-.line path{
+.line path {
   transition: 1.5s;
+}
+
+.line0 path {
+  transition: 1s;
 }
 
 /***** flow section *****/
@@ -426,21 +421,10 @@ header {
   position: absolute;
 }
 
-/* .st1 {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  animation: dash2 2.5s linear alternate infinite;
+.weare svg path {
+  transition: 2s;
 }
 
-@keyframes dash2 {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
- */
 /***** info ******/
 .info {
   color: #fff;
@@ -589,6 +573,11 @@ footer .footer-txt span {
   position: absolute;
   top: 10vw;
   left: 28vw;
+  width: 30vw;
+}
+
+.footer-img svg path {
+  transition: 3s;
 }
 
 .footer-img img:nth-child(1) {
