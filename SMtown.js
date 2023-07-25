@@ -145,7 +145,7 @@ const line2 = document.querySelectorAll(".line2 path");
 $(window).on("scroll", () => {
   line2.forEach(function (a, idx) {
     let length = a.getTotalLength();
-    console.log(length);
+    //console.log(length);
     if (scrollY > 10200) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
@@ -168,5 +168,3 @@ $(window).on("scroll", () => {
     }
   });
 });
-
-
