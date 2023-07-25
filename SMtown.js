@@ -111,17 +111,3 @@ $("html").on("wheel", function (e) {
     $("#btn").css({ fill: "#000", "background-color": "#fff" });
   }
 });
-
-const line = document.querySelectorAll(".st1 path");
-$(window).on("scroll", () => {
-  line.forEach(function (a, idx) {
-    let length = a.getTotalLength();
-    // console.log(length);
-    if (scrollY > 9000) {
-      a.style.strokeDasharray = length;
-      a.style.strokeDashoffset = 0;
-    } else {
-      a.style.strokeDashoffset = length;
-    }
-  });
-});
