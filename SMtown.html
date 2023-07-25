@@ -28,7 +28,7 @@
   <!-- 제이쿼리 파일 -->
   <script src="./common/style/jquery-3.7.0.min.js"></script>
   <!-- 외부 js -->
-  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="./common/style/gsap.min.js"></script>
   <script src="./common/style/ScrollTrigger.min.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
   <!-- 내가 쓴 js -->
@@ -52,6 +52,7 @@
         <li><a href="#">Investor</a></li>
       </ul>
     </div>
+
     <div class="header-txt">
       <div class="ani_top" id="top">
         <div>SMTOW<span>N</span></div>
@@ -59,8 +60,10 @@
       <div class="ani_bottom">
         <p>We <span>creative</span></p>
       </div>
+      <div class="bg"></div>
     </div>
   </header>
+
 
   <div class="gradient"></div>
 
@@ -221,16 +224,15 @@
         d="M3 30.1472C8 20.1472 24.2 5.14719 49 25.1472C73.8 45.1472 108.667 26.814 123 15.1473C133.167 5.98067 162.4 -6.85266 198 15.1473C233.6 37.1473 253.5 24.314 259 15.1473"
         stroke="white" stroke-width="5" stroke-linecap="round" style="stroke-dashoffset: 0; stroke-dasharray: 282;" />
     </svg>
-
   </section>
 
-  <!----- info ----->
+  <!----- info ---
   <section class="info">
     <div class="info-wrap">
       <div class="info-top">
         <div class="info-indi">
           <p><span>1</span>OverView</p>
-          <ul class="info-common">
+          <ul class="info-common" id="itroduce_list">
             <li>COMPANY INTRODUCTION</li>
             <li>INTRODUCTION</li>
             <li>SM STRATEGY</li>
@@ -240,7 +242,7 @@
         </div>
         <div class="info-indi">
           <p><span>2</span>Business</p>
-          <ul class="info-common">
+          <ul class="info-common" id="itroduce_list">
             <li>ENTERTAINMENT</li>
             <li>MUSIC</li>
             <li>MAGAGEMENT</li>
@@ -273,6 +275,120 @@
       </div>
     </div>
   </section>
+  -->
+  <!-- introduce -->
+  <section id="introduce_container">
+    <div id="introduce_content">
+      <ul id="itroduce_list">
+        <li>
+          <h3><span>1</span>OverView</h3>
+          <ul class="itroduce_sub_list">
+            <li>
+              <h4>COMPANY INTRODUCTION</h4>
+            </li>
+            <li>
+              <h4>INTRODUCTION</h4>
+            </li>
+            <li>
+              <h4>SM STRATEGY</h4>
+            </li>
+            <li>
+              <h4>BUSINESS AREA</h4>
+            </li>
+            <li>
+              <h4>HISTORY</h4>
+            </li>
+          </ul>
+          <div class="fixed_img">
+            <img src="./images/li1.jpg" alt="plan_over">
+          </div>
+
+          <svg width="494" height="1" viewBox="0 0 494 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="494" y2="0.5" stroke="white" />
+          </svg>
+
+        </li>
+        <li>
+          <h3><span>2</span>Business</h3>
+          <ul class="itroduce_sub_list">
+            <li>
+              <h4>ENTERTAINMENT</h4>
+            </li>
+            <li>
+              <h4>MUSIC</h4>
+            </li>
+            <li>
+              <h4>MAGAGEMENT</h4>
+            </li>
+            <li>
+              <h4>ARTIST</h4>
+            </li>
+            <li>
+              <h4>BEYOUND LIVE</h4>
+            </li>
+          </ul>
+          <div class="fixed_img">
+            <img src="./images/li2.jpg" alt="des_over">
+          </div>
+          <svg width="494" height="1" viewBox="0 0 494 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="494" y2="0.5" stroke="white" />
+          </svg>
+        </li>
+        <li>
+          <h3><span>3</span>SustainAbility</h3>
+          <ul class="itroduce_sub_list">
+            <li>
+              <h4>ESG STRATEGY</h4>
+            </li>
+            <li>
+              <h4>ESG REPORT</h4>
+            </li>
+            <li>
+              <h4>ENVIRONMENT</h4>
+            </li>
+            <li>
+              <h4>POLICY</h4>
+            </li>
+            <li>
+              <h4>ACTIVITY</h4>
+            </li>
+          </ul>
+          <div class="fixed_img">
+            <img src="./images/li3.jpg" alt="pub_over">
+          </div>
+          <svg width="494" height="1" viewBox="0 0 494 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="494" y2="0.5" stroke="white" />
+          </svg>
+        </li>
+        <li>
+          <h3><span>4</span>Sportlight</h3>
+          <ul class="itroduce_sub_list">
+            <li>
+              <h4>PRESS</h4>
+            </li>
+            <li>
+              <h4>CENTER</h4>
+            </li>
+            <li>
+              <h4>CAREERS</h4>
+            </li>
+            <li>
+              <h4>INSIDE SM</h4>
+            </li>
+            <li>
+              <h4>CAREER GUIDE</h4>
+            </li>
+          </ul>
+          <div class="fixed_img">
+            <img src="./images/li4.jpg" alt="dev_over">
+          </div>
+          <svg width="494" height="1" viewBox="0 0 494 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="494" y2="0.5" stroke="white" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <!----- footer ----->
   <footer>
@@ -290,7 +406,8 @@
           stroke="white" stroke-width="5" stroke-linecap="round" style="stroke-dashoffset: 0; stroke-dasharray: 76;" />
         <path
           d="M3 101.427C26.8333 113.953 94.2 134.753 173 117.744C271.5 96.482 334 47.5309 304.5 13.4136C275 -20.7038 40.5 32.2029 143 136.533C225 219.997 467.833 185.813 579 158.289"
-          stroke="white" stroke-width="5" stroke-linecap="round" style="stroke-dashoffset: 0; stroke-dasharray: 282;" />
+          stroke="white" stroke-width="5" stroke-linecap="round"
+          style="stroke-dashoffset: 0; stroke-dasharray: 1099;" />
       </svg>
 
     </div>

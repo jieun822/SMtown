@@ -31,6 +31,8 @@
 html {
   /* 부드러운 스크롤 */
   scroll-behavior: smooth;
+  --color-texta: #1d1d1d;
+  --color-textb: #fff;
 }
 
 body {
@@ -54,11 +56,11 @@ body {
 }
 
 .global-nav li {
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .global-nav li:hover {
-  transform: translateX(0.5vw);
+  transform: scale(1.1);
 }
 
 .top-menu .logo img {
@@ -66,7 +68,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  /*   height: 100vh; */
 }
 
 .header-txt {
@@ -425,7 +427,7 @@ header {
   transition: 2s;
 }
 
-/***** info ******/
+/***** info *****
 .info {
   color: #fff;
   font-family: var(--en-font1);
@@ -460,7 +462,7 @@ header {
   transition: 0.3s;
   cursor: pointer;
 }
-
+/* 
 .info-common li:hover {
   transform: translateX(-7px);
 }
@@ -480,6 +482,7 @@ header {
 .info-indi {
   width: 50%;
   overflow: hidden;
+  position: relative;
 }
 
 .info p {
@@ -509,6 +512,7 @@ header {
   top: 1vw;
   left: 20vw;
 }
+*/
 
 /**** footer *****/
 footer {
@@ -631,3 +635,95 @@ footer .contact {
 .arrowbtn a:hover {
   transform: translateY(-7px);
 }
+
+/* introduce_container */
+#introduce_container {
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+  font-family: var(--en-font1);
+}
+
+#introduce_content {
+  width: 80%;
+  color: #fff;
+  margin: 5vw auto;
+}
+
+#itroduce_list {
+  width: 100%;
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#itroduce_list > li {
+  position: relative;
+  width: 45%;
+  z-index: 5;
+  overflow: hidden;
+}
+
+#itroduce_list > li svg {
+  position: absolute;
+  top: 1vw;
+  left: 10vw;
+}
+
+
+#itroduce_list > li:nth-child(3) svg {
+  width: 70%;
+  left: 12vw;
+}
+
+#itroduce_list > li:nth-child(odd) {
+  margin-right: 6vw;
+}
+
+#itroduce_list > li:nth-child(1),
+#itroduce_list > li:nth-child(2) {
+  margin-bottom: 5vw;
+}
+#itroduce_list > li > h3 {
+  font-size: 1.5vw;
+  padding-bottom: 1vw;
+}
+
+#itroduce_list > li > h3 > span {
+  font-size: 1vw;
+  border: #fff solid 1px;
+  width: 1.5vw;
+  height: 1.5vw;
+  text-align: center;
+  line-height: 1.5vw;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.itroduce_sub_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itroduce_sub_list li {
+  width: 100%;
+  text-align: right;
+  padding-bottom: 1.2vw;
+  padding-right: 0.5vw;
+}
+
+.itroduce_sub_list li h4 {
+  font-size: 1.1vw;
+}
+
+#itroduce_list .fixed_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  width: 60%;
+}
+
+.

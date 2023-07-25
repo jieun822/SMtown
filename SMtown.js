@@ -160,11 +160,27 @@ $(window).on("scroll", () => {
   arrow.forEach(function (a, idx) {
     let length = a.getTotalLength();
     //console.log(length);
-    if (scrollY > 11000) {
+    if (scrollY > 10900) {
       a.style.strokeDasharray = length;
       a.style.strokeDashoffset = 0;
     } else {
       a.style.strokeDashoffset = length;
     }
+  });
+});
+
+// li 이미지 커서 이벤트
+$("#introduce_content ul#itroduce_list > li").mousemove(function (e) {
+  $(this)
+    .find($(".fixed_img"))
+    .css({
+      top: e.offsetY + "px",
+      left: e.offsetX + "px",
+      opacity: 1,
+    });
+});
+$("#introduce_content ul#itroduce_list > li").mouseleave(function () {
+  $(this).find($(".fixed_img")).css({
+    opacity: 0,
   });
 });
