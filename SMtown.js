@@ -96,6 +96,7 @@ ScrollTrigger.matchMedia({
 
 $("html").on("wheel", function (e) {
   var _scrollTop = window.scrollY || document.documentElement.scrollTop; // 현재 스크롤 위치
+  console.log(_scrollTop);
 
   // 위로 버튼 이벤트
   if (_scrollTop < 0) {
@@ -111,3 +112,21 @@ $("html").on("wheel", function (e) {
     $("#btn").css({ fill: "#000", "background-color": "#fff" });
   }
 });
+<<<<<<< HEAD
+=======
+
+const line = document.querySelectorAll('.line path');
+$(window).on('scroll', () => {
+  line.forEach(function (a, idx) {
+    let length = a.getTotalLength();
+    //console.log(length);
+    if (scrollY > 700) {
+      a.style.strokeDasharray = length;
+      a.style.strokeDashoffset = 0;
+    } else {
+      a.style.strokeDashoffset = length;
+    }
+  });
+});
+
+>>>>>>> 1eb414dcd18419f154589bb14d51937b331b7fe9
