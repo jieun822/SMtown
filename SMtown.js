@@ -99,9 +99,12 @@ $("html").on("wheel", function (e) {
   //console.log(_scrollTop);
 
   // 위로 버튼 이벤트
-  if (_scrollTop < 0) {
+  if (_scrollTop < 500) {
+    $("#btn").css({ fill: "#fff", "background-color": "#000" });
+  } else if (_scrollTop < 500) {
     $("#btn").css({ fill: "#fff", "background-color": "#000" });
   }
+
   if (_scrollTop > 15) {
     $("#btn").css({ fill: "#000", "background-color": "#fff" });
   }
@@ -183,4 +186,96 @@ $("#introduce_content ul#itroduce_list > li").mouseleave(function () {
   $(this).find($(".fixed_img")).css({
     opacity: 0,
   });
+});
+
+/* // 마우스 이벤트
+$(document).mousemove(function (e) {
+  var mouseX = e.pageX;
+  var mouseY = e.pageY;
+
+  $(".cursor").css({
+    left: mouseX + "px",
+    top: mouseY + "px",
+  });
+});
+ */
+
+var cursor = document.querySelector(".cursor");
+var cursorinner = document.querySelector(".cursor2");
+var a = document.querySelectorAll("a");
+var iframe = document.querySelectorAll(".iframe-main");
+var big = document.querySelectorAll("#big");
+
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+});
+
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + "px";
+  cursorinner.style.top = y + "px";
+});
+
+document.addEventListener("mousedown", function () {
+  cursor.classList.add("click");
+  cursorinner.classList.add("cursorinnerhover");
+});
+
+document.addEventListener("mouseup", function () {
+  cursor.classList.remove("click");
+  cursorinner.classList.remove("cursorinnerhover");
+});
+
+a.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    cursor.classList.add("hover");
+  });
+  item.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});
+
+iframe.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    cursor.classList.add("hover");
+  });
+  item.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});
+
+big.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    cursor.classList.add("hover");
+  });
+  item.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});
+
+$("html").on("wheel", function (e) {
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  // 현재 스크롤 위치
+  //console.log(scrollTop);
+
+  // 마우스 이벤트
+  if (scrollTop > 500) {
+    $("#cursor").css({ border: "1px solid #fff" });
+    $("#cursor2").css({ "background-color": "#fff" });
+  } else if (scrollTop < 500) {
+    $("#cursor").css({ border: "1px solid #333" });
+    $("#cursor2").css({ "background-color": "#333" });
+  }
+
+  if (scrollTop > 2900) {
+    $("#cursor").css({ border: "1px solid #333" });
+    $("#cursor2").css({ "background-color": "#333" });
+  }
+  if (scrollTop > 9800) {
+    $("#cursor").css({ border: "1px solid #fff" });
+    $("#cursor2").css({ "background-color": "#fff" });
+  }
 });

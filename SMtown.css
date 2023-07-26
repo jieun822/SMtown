@@ -37,6 +37,7 @@ html {
 
 body {
   overflow-x: hidden;
+  cursor: none;
 }
 
 .top-menu {
@@ -60,7 +61,7 @@ body {
 }
 
 .global-nav li:hover {
-  transform: scale(1.1);
+  transform: translateX(-6px);
 }
 
 .top-menu .logo img {
@@ -670,7 +671,6 @@ footer .contact {
   left: 10vw;
 }
 
-
 #itroduce_list > li:nth-child(3) svg {
   width: 70%;
   left: 12vw;
@@ -726,4 +726,66 @@ footer .contact {
   width: 60%;
 }
 
-.
+.content {
+  margin: 200px;
+}
+.content h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+.content p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* .cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: red;
+  transform: translate(-50%, 5%);
+  z-index: 9;
+  will-change: transform;
+  pointer-events: none;
+  border-radius: 50%;
+}
+ */
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #333;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 999;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #333;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 999;
+}
+
+.hover {
+  width: 80px;
+  height: 80px;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
