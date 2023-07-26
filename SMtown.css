@@ -68,10 +68,10 @@ body {
   width: 30%;
 }
 
-header {
-  /*   height: 100vh; */
+/* header {
+  height: 90vh;
 }
-
+ */
 .header-txt {
   display: flex;
   flex-direction: column;
@@ -387,7 +387,7 @@ header {
 /****we are****/
 
 .weare {
-  padding: 15vw 0 5vw;
+  padding: 13% 0 5vw;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -414,12 +414,12 @@ header {
 .weare img {
   width: 40%;
   position: absolute;
-  top: 9vw;
+  top: 20%;
   left: 40vw;
 }
 
 .weare svg {
-  top: 25vw;
+  top: 23vw;
   left: 67vw;
   position: absolute;
 }
@@ -427,93 +427,6 @@ header {
 .weare svg path {
   transition: 2s;
 }
-
-/***** info *****
-.info {
-  color: #fff;
-  font-family: var(--en-font1);
-  font-size: 1.5vw;
-  width: 100%;
-  height: 100vh;
-  background-color: #000;
-}
-
-.info-wrap {
-  width: 80%;
-  margin: 0 auto;
-  transform: translateY(20%);
-}
-
-.info-top,
-.info-bottom {
-  display: flex;
-  margin: 0 auto;
-  gap: 5vw;
-}
-.info-top {
-  margin-bottom: 3vw;
-}
-.info-common {
-  font-size: 1vw;
-}
-
-.info-common li {
-  text-align: right;
-  line-height: 3;
-  transition: 0.3s;
-  cursor: pointer;
-}
-/* 
-.info-common li:hover {
-  transform: translateX(-7px);
-}
-
-.info span {
-  display: inline-block;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  width: 1.5vw;
-  height: 1.5vw;
-  text-align: center;
-  line-height: 1.5vw;
-  font-size: 1vw;
-  margin-right: 1vw;
-}
-
-.info-indi {
-  width: 50%;
-  overflow: hidden;
-  position: relative;
-}
-
-.info p {
-  position: relative;
-}
-
-.info p::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  top: 1vw;
-  left: 10vw;
-}
-
-.small {
-  position: relative;
-}
-
-.small::after {
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  top: 1vw;
-  left: 20vw;
-}
-*/
 
 /**** footer *****/
 footer {
