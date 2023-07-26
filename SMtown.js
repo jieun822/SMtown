@@ -188,18 +188,6 @@ $("#introduce_content ul#itroduce_list > li").mouseleave(function () {
   });
 });
 
-/* // 마우스 이벤트
-$(document).mousemove(function (e) {
-  var mouseX = e.pageX;
-  var mouseY = e.pageY;
-
-  $(".cursor").css({
-    left: mouseX + "px",
-    top: mouseY + "px",
-  });
-});
- */
-
 var cursor = document.querySelector(".cursor");
 var cursorinner = document.querySelector(".cursor2");
 var a = document.querySelectorAll("a");
