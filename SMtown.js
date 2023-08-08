@@ -173,7 +173,7 @@ $(window).on("scroll", () => {
 });
 
 // li 이미지 커서 이벤트
-$("#introduce_content ul#itroduce_list > li").mousemove(function (e) {
+$(".introduce_content ul.itroduce_list > li").mousemove(function (e) {
   $(this)
     .find($(".fixed_img"))
     .css({
@@ -182,7 +182,7 @@ $("#introduce_content ul#itroduce_list > li").mousemove(function (e) {
       opacity: 1,
     });
 });
-$("#introduce_content ul#itroduce_list > li").mouseleave(function () {
+$(".introduce_content ul.itroduce_list > li").mouseleave(function () {
   $(this).find($(".fixed_img")).css({
     opacity: 0,
   });

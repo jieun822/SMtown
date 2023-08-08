@@ -551,58 +551,59 @@ footer .contact {
 }
 
 /* introduce_container */
-#introduce_container {
+.introduce_container {
   width: 100%;
   background-color: #000;
   overflow: hidden;
   font-family: var(--en-font1);
 }
 
-#introduce_content {
+.introduce_content {
   width: 80%;
   color: #fff;
   margin: 5vw auto;
 }
 
-#itroduce_list {
+.itroduce_list {
   width: 100%;
   margin-top: 10vh;
   display: flex;
   flex-wrap: wrap;
 }
 
-#itroduce_list > li {
+.itroduce_list > li {
   position: relative;
   width: 45%;
   z-index: 5;
   overflow: hidden;
 }
 
-#itroduce_list > li svg {
+.itroduce_list > li svg {
   position: absolute;
   top: 1vw;
   left: 10vw;
 }
 
-#itroduce_list > li:nth-child(3) svg {
+.itroduce_list > li:nth-child(3) svg {
   width: 70%;
   left: 12vw;
 }
 
-#itroduce_list > li:nth-child(odd) {
+.itroduce_list > li:nth-child(odd) {
   margin-right: 6vw;
 }
 
-#itroduce_list > li:nth-child(1),
-#itroduce_list > li:nth-child(2) {
+.itroduce_list > li:nth-child(1),
+.itroduce_list > li:nth-child(2) {
   margin-bottom: 5vw;
 }
-#itroduce_list > li > h3 {
+
+.itroduce_list > li > h3 {
   font-size: 1.5vw;
   padding-bottom: 1vw;
 }
 
-#itroduce_list > li > h3 > span {
+.itroduce_list > li > h3 > span {
   font-size: 1vw;
   border: #fff solid 1px;
   width: 1.5vw;
@@ -630,7 +631,7 @@ footer .contact {
   font-size: 1.1vw;
 }
 
-#itroduce_list .fixed_img {
+.itroduce_list .fixed_img {
   position: absolute;
   top: 0;
   left: 0;
